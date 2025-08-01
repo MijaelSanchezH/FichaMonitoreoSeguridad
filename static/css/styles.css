@@ -46,3 +46,24 @@ textarea, input[type="text"], input[type="date"], input[type="time"] {
     text-align: left;
     font-weight: normal;
 }
+
+.botones-final {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.botones-final button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 0 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botones-final button:hover {
+  background-color: #0d47a1;
+}
