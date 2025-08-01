@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificación de Ambientes Críticos</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <th><img src="/static/img/log-MINEDU.png" alt="Logo_MINEDU" width="300"></th>
+            <th><h1>Centro de Datos Provisional</h1></th>
+            <th><h2>Ficha de Verificación de Ambientes Críticos</h2></th>
+        </table>
+
+        <table class="tab_2">
+            <th><b>Procedimiento:</b> Ficha de verificación de los ambientes de la OTIC (Centro de Datos Provisional, Centro de Datos Nuevo y Hub Satelital)</th>
+        </table>
+
+        <div class="info">
+            <label>Fecha: <input type="date"></label>
+            <label>Hora Inicio: <input type="time"></label>
+            <label>Hora Fin: <input type="time"></label>
+            <label>Nombre Agente: <input type="text"></label>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Salas</th>
+                    <th colspan="2">Temperatura (°C)</th>
+                </tr>
+                <tr>
+                    <th>Pasillo caliente Debe estar entre 25 °C y 35 °C</th>
+                    <th>Pasillo frio Debe estar entre 19 °C y 25 °C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sala de Servidores</td>
+                    <td><input type="text" name="ss-tmp-hot"></td>
+                    <td><input type="text" name="ss-tmp-cool"></td>
+                </tr>
+                <tr>
+                    <td>Sala PBX</td>
+                    <td><input type="text" name="pbx-tmp-hot"></td>
+                    <td><input type="text" name="pbx-tmp-cool"></td>
+                </tr>
+                <tr>
+                    <td>Sala UPS</td>
+                    <td><input type="text" name="ups-tmp-hot"></td>
+                    <td><input type="text" name="ups-tmp-cool"></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Verificación física y visual de los ambientes</th>
+                    <th>Sí</th>
+                    <th>No</th>
+                    <th>Detalle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>¿Las salas están calientes?</td>
+                    <td><input type="radio" name="calor"></td>
+                    <td><input type="radio" name="calor"></td>
+                    <td><input type="text" name="detalle-calor"></td>
+                </tr>
+                <tr>
+                    <td>¿Ausencia de flujo de aire?</td>
+                    <td><input type="radio" name="aire"></td>
+                    <td><input type="radio" name="aire"></td>
+                    <td><input type="text" name="detalle-aire"></td>
+                </tr>
+                <tr>
+                    <td>¿Presencia de humo?</td>
+                    <td><input type="radio" name="humo"></td>
+                    <td><input type="radio" name="humo"></td>
+                    <td><input type="text" name="detalle-humo"></td>
+                </tr>
+                <tr>
+                    <td>¿Presencia de fuego?</td>
+                    <td><input type="radio" name="fuego"></td>
+                    <td><input type="radio" name="fuego"></td>
+                    <td><input type="text" name="detalle-fuego"></td>
+                </tr>
+                <tr>
+                    <td>¿Olor a quemado?</td>
+                    <td><input type="radio" name="olor"></td>
+                    <td><input type="radio" name="olor"></td>
+                    <td><input type="text" name="detalle_olor"></td>
+                </tr>
+                <tr>
+                    <td>¿Ausencia de energía eléctrica?</td>
+                    <td><input type="radio" name="energia"></td>
+                    <td><input type="radio" name="energia"></td>
+                    <td><input type="text" name="detalle-energia"></td>
+                </tr>
+                <tr>
+                    <td>¿Inundación?</td>
+                    <td><input type="radio" name="agua"></td>
+                    <td><input type="radio" name="agua"></td>
+                    <td><input type="text" name="detalle-agua"></td>
+                </tr>
+                <tr>
+                    <td>¿Ruido extraño?</td>
+                    <td><input type="radio" name="ruido"></td>
+                    <td><input type="radio" name="ruido"></td>
+                    <td><input type="text" name="detalle-ruido"></td>
+                </tr>
+                <tr>
+                    <td>¿Otra anomalía?</td>
+                    <td><input type="radio" name="anomalia"></td>
+                    <td><input type="radio" name="anomalia"></td>
+                    <td><input type="text" name="detalle-anomalia"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="observaciones">
+            <label>Observaciones:</label><br>
+            <textarea rows="10" cols="60"></textarea>
+            <img src="/static/img/info.png" alt="Logo_MINEDU" width="410">
+        </div>
+        
+    </div>
+</body>
+</html>
